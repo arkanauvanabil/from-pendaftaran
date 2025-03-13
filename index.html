@@ -2,19 +2,68 @@
 	<html> 
 		<head> 
 		
-		<body>
+		
+		
 		<title>  Tugas 07-03-2025  </title>
 			<meta name= "author" content= "Arkan Auva Nabil">
 			
+			<style>
+			body{background-color: aqua;}		
+			h2{color: red;font-italic: italic; text-align: center;}	
+			#text-biru{color: blue;}
+			input[type="text"],[type="date"],[type = "email"],[type = "tel"]{
+				border-radius: 15px;
+				background-color: pink;
+				color: blue;
+				padding: 10px;
+				width: 90%;
+				}
+				select{
+				 background-color: pink;
+				 color: blue;
+				 border-radius: 15px;
+				 }
+				 textarea{
+				 background-color: pink;
+				 color: blue;
+				 border-radius: 15px ;
+				 font-family: arial;
+				 text-align: justify;
+				 }
+				 *{
+				 color: purple;
+				 font-style: italic
+				 text-align: center;
+				 font-family: Cursive;
+				 }
+				 ::placeholder{
+				 color:blue;
+				 }
+				 #button{
+				 border-radius: 15px;
+				 padding: 15px;
+				 color:black;
+				 font-weight: bold;
+				 }
+				 #button:hover{
+				 background-color: blue;
+				 font-weight: bold;
+				 padding: 10px;
+				 color:red;
+				 }
+			</style>
+		</head>
+		<body>
 		<h2>  Form Pendaftaran</h2>
-			
+		<h2 class = "h2"> Arkan Sigma </h2>
+		
 			
 <form action = "" method = "GET">  	
 	<table width = "100%">
 	<tr>
 		<td width = "50%">
 			<fieldset>
-				<legend> Data Pribadi </legend>
+				<legend id = "text-biru" > Data Pribadi </legend>
 				<table cellpadding = "5" > 
 					<tr> 
 						<td><label for ="nama"> Nama : </label>	</td>
@@ -76,12 +125,12 @@
 					<tr>
 						<td><label>Foto</label></td>
 						<td>:</td>
-						<td> <input type="file" name="foto" accept="image/*"></td>
+						<td> <input type="file" name="foto" accept="image/*" id = "button" ></td>
 					</tr>
 					<tr>
 						<td><label>CV</label></td>
 						<td>: </td>
-						<td><input type="file" name="cv" accept=".pdf"></td>
+						<td><input type="file" name="cv" accept=".pdf" id = "button" ></td>
 						</tr>
 						
 						
@@ -137,8 +186,8 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-					<input type="submit" value="Simpan">
-					<input type="reset" value="Reset">
+					<input type="submit"  value="Simpan" id = "button">
+					<input type="reset"  value="Reset" id = "button">
 					</td>
 				</tr>
 			</table>
@@ -158,20 +207,5 @@
 			
 			
 			</body>
-		</head>
+		
 	</html>
-			
-			
-			
-			
-			
-			
-
-			
-			
-		
-
-		
-		
-		
-		
